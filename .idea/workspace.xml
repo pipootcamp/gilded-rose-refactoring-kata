@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a46f3026-31cb-4600-80bc-b77e857d8146" name="Changes" comment="algo etc etc" />
+    <list default="true" id="a46f3026-31cb-4600-80bc-b77e857d8146" name="Changes" comment="algo etc etc">
+      <change beforePath="$PROJECT_DIR$/test_gilded_rose.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_gilded_rose.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
