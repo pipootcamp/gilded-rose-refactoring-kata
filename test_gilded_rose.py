@@ -48,7 +48,7 @@ class GildedRoseTest(unittest.TestCase):
         items = [Item("Sulfuras, Hand of Ragnaros", 7, 40)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        self.assertEqual(40, items[0].quality)
+        self.assertEqual(80, items[0].quality)
     #@unittest.skip("porque jose dijo")
     def test_sulfuras_should_not_decrease_in_sellin(self):
         items = [Item("Sulfuras, Hand of Ragnaros", 7, 50)]
@@ -73,6 +73,18 @@ class GildedRoseTest(unittest.TestCase):
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
         self.assertEqual(0, items[0].quality)
+
+    def test_conjured_items_degrade_double(self):
+        items = [Item("Conjured cheese", 10, 12)]
+        gilded_rose = GildedRose(items)
+        gilded_rose.update_quality()
+        self.assertEqual(10, items[0].quality)
+
+    def test_sulfuras_quality_always_80(self):
+        items = [Item("Sulfuras, Hand of Ragnaros", 10, 12)]
+        gilded_rose = GildedRose(items)
+        gilded_rose.update_quality()
+        self.assertEqual(80, items[0].quality)
 
 
 
